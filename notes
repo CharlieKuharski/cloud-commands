@@ -1,0 +1,73 @@
+// Show github
+// Show 
+
+
+jx create cluster gke --verbose
+
+//show GCloud
+   // cluster
+   //. create ClusterRoleBinding kabuski-gmail-com-cluster-admin-binding for role: cluster-admin for user kabuski@gmail.com
+   // create ClusterRoleBinding tiller for role: cluster-admin and ServiceAccount: kube-system/tiller
+   // compute 
+//show github
+//show Terminal => jenkins url, user, pass
+
+// url -> /actuator/health
+
+
+============
+
+jx get environments
+jx delete environment dev
+jx delete environment staging
+jx delete environment production
+
+kubectl delete namespace jx
+kubectl delete namespace jx-staging
+kubectl delete namespace jx-production
+
+
+
+
+===========
+jx open
+jx preview
+
+
+=========
+https://jenkins-x.io/developing/devpods/
+
+=============
+jx promote myapp -e prod 
+
+
+=============
+https://www.youtube.com/watch?v=53AtxQGXnMk
+
+jx create issue -t  "some issue"
+
+git commit -a -m "my fix fixes #1"
+
+
+
+
+=================
+Watch pipeline activity via:    jx get activity -f demo -w
+Browse the pipeline log via:    jx get build logs CharlieKuharski/demo/master
+Open the Jenkins console via    jx console
+You can list the pipelines via: jx get pipelines
+When the pipeline is complete:  jx get applications
+
+==================
+gcloud auth configure-docker
+gcloud components update
+gcloud components update --version 204.0.0   ---> Revert to version
+
+
+===========
+gcloud container clusters create skaf-cluster --zone us-central1-a
+gcloud container clusters delete hoofobsidian --zone us-central1-a
+
+
+===============
+https://blog.octo.com/en/jenkinsx-new-kubernetes-dream-part-2-technical/
